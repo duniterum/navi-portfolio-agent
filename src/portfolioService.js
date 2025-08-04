@@ -21,7 +21,7 @@ export async function getEthBalance(address) {
  * @returns {Promise<number>} - Current ETH price in USD
  */
 export async function getEthPrice() {
-  const res = await fetch(\`\${COINGECKO_API}/simple/price?ids=ethereum&vs_currencies=usd\`);
+  const res = await fetch(`${COINGECKO_API}/simple/price?ids=ethereum&vs_currencies=usd`);
   const data = await res.json();
   return data?.ethereum?.usd || 0;
 }
