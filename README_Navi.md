@@ -7,35 +7,22 @@
 Created with the vision of reducing complexity in crypto management, Navi combines the power of large language models, Web3 APIs, and behavioral finance into one intuitive agent.
 
 ## Features ✨
-- 🔍 **Autonomous Asset Monitoring**  
-  Real-time tracking across Ethereum, Solana, Avalanche, and other chains.
-
-- ⚖️ **Dynamic Portfolio Rebalancing**  
-  Optimizes allocation based on volatility, performance, and user-defined rules.
-
-- 🛡️ **Built-in Risk Management**  
-  Trigger alerts and automated stop-loss mechanisms to reduce exposure.
-
-- 📈 **Insight & Reporting Engine**  
-  On-chain metrics, airdrop detection, yield opportunities, and more.
-
-- 🤖 **Agent Behavior Modes**  
-  Passive, Balanced, and Aggressive profiles — customizable at runtime.
-
-- 🧬 **Human-like AI Interaction**  
-  Navi explains actions and strategies like a real financial advisor, in natural language.
-
-- 🔔 **Smart Notification System**  
-  Telegram, Discord, and email support with rich summaries and alerts.
+- 🔍 Autonomous Asset Monitoring  
+- ⚖️ Dynamic Portfolio Rebalancing  
+- 🛡️ Built-in Risk Management  
+- 📈 Insight & Reporting Engine  
+- 🤖 Agent Behavior Modes  
+- 🧬 Human-like AI Interaction  
+- 🔔 Smart Notification System  
 
 ## Installation 🛠️
 
 ### Prerequisites
 - Node.js (v18+)
 - Yarn or npm
-- MongoDB or Supabase for storage
+- MongoDB or Supabase
 - Web3 wallet (e.g., MetaMask)
-- Optional: OpenAI API Key (for advanced LLM capabilities)
+- Optional: OpenAI API Key
 
 ### Steps
 ```sh
@@ -46,21 +33,17 @@ git clone https://github.com/your-username/navi-portfolio-agent.git
 cd navi-portfolio-agent
 
 # Install dependencies
-npm install  # or yarn install
+npm install
 
 # Set environment variables
 cp .env.example .env
-# Fill in values for INFURA_KEY, COINGECKO_API, WALLET_ADDRESS, etc.
 
 # Run the application
-npm start  # or yarn start
-
-# Visit localhost:3000 to access your dashboard
+npm start
 ```
 
 ## Coming Soon 🧪
-- Multisig trade confirmations
+- Multisig confirmations
 - Voice command support
-- AI learning from your trading habits
-- NFT collection valuation
-- DAO governance automation
+- NFT collection analysis
+- DAO voting integration
