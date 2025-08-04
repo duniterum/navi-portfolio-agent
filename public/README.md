@@ -1,1 +1,0 @@
-# Navi: The Aigentic Crypto Portfolio Strategist 🧠💸
