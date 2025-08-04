@@ -1,21 +1,16 @@
 
 import React from 'react';
-import { ethers } from 'ethers';
+import { connectWallet } from './walletManager';
 
 const WalletUI = ({ onConnect }) => {
-  const connect = async () => {
-    if (!window.ethereum) {
-      alert("Install MetaMask");
-      return;
+  const handleConnect = async () => {
+    const wallet = await connectWallet();
+    if (wallet) {
+      onConnect(wallet.address);
     }
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    await provider.send("eth_requestAccounts", []);
-    const signer = provider.getSigner();
-    const address = await signer.getAddress();
-    onConnect(address);
   };
 
-  return <button onClick={connect}>Connect Wallet</button>;
+  return <button onClick={handleConnect}>Connect Wallet</button>;
 };
 
 export default WalletUI;

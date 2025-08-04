@@ -1,3 +1,0 @@
-
-# Navi – Aigentic Crypto Portfolio Strategist
-Prompt-based agent definition for EternalAI and beyond.

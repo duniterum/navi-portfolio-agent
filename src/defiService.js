@@ -1,12 +1,27 @@
 
+const DEBANK_API = 'https://openapi.debank.com/v1/user/total_balance';
+
+/**
+ * Fetch DeFi portfolio data from DeBank
+ */
 export async function getDeFiPortfolio(walletAddress) {
-  const url = `https://openapi.debank.com/v1/user/total_balance?id=${walletAddress}`;
-  const res = await fetch(url);
-  const data = await res.json();
-  return {
-    chainList: data.chain_list,
-    totalUsdValue: data.total_usd_value.toFixed(2),
-    stableUsdValue: data.stable_usd_value.toFixed(2),
-    assetUsdValue: data.asset_usd_value.toFixed(2)
-  };
+  try {
+    const res = await fetch(`${DEBANK_API}?id=${walletAddress}`);
+    const data = await res.json();
+
+    return {
+      chainList: data.chain_list,
+      totalUsdValue: data.total_usd_value?.toFixed(2) || '0.00',
+      stableUsdValue: data.stable_usd_value?.toFixed(2) || '0.00',
+      assetUsdValue: data.asset_usd_value?.toFixed(2) || '0.00'
+    };
+  } catch (err) {
+    console.error("Failed to fetch DeFi portfolio:", err);
+    return {
+      chainList: [],
+      totalUsdValue: '0.00',
+      stableUsdValue: '0.00',
+      assetUsdValue: '0.00'
+    };
+  }
 }
