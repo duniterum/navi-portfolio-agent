@@ -1,9 +1,6 @@
 
 const DEBANK_API = 'https://openapi.debank.com/v1/user/total_balance';
 
-/**
- * Fetch DeFi portfolio data from DeBank
- */
 export async function getDeFiPortfolio(walletAddress) {
   try {
     const res = await fetch(`${DEBANK_API}?id=${walletAddress}`);
