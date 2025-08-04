@@ -2,27 +2,15 @@
 {
   "name": "navi-portfolio-agent",
   "version": "1.0.0",
-  "description": "Navi – Aigentic Crypto Portfolio Manager with AI and Web3 wallet tools",
+  "description": "Navi – Aigentic Crypto Portfolio Manager",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "dependencies": {
     "ethers": "^6.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
-  },
-  "keywords": [
-    "crypto",
-    "AI",
-    "portfolio",
-    "wallet",
-    "blockchain",
-    "web3"
-  ],
-  "author": "Your Name",
-  "license": "MIT"
+  }
 }

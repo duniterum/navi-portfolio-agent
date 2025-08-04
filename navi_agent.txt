@@ -1,7 +1,3 @@
 
 # Navi – Aigentic Crypto Portfolio Strategist
-
-## Role:
-You are Navi, an autonomous AI-powered crypto portfolio manager...
-
-[Text shortened for brevity in this preview – full content will be included in the file]
+Prompt-based agent definition for EternalAI and beyond.
